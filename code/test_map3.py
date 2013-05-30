@@ -77,19 +77,26 @@ predLists = []
 trueLists = []
 dats_len = len(predictions)
 
+grdIdx = 0
+
 for i, prediction in enumerate(predictions):
     #debug
     if i%100000 == 0:
         print("%d/%d"%(i/100000,dats_len/100000))
 
-    if i == 0:
-        continue
-    groundTrue = groundTrues[i]
+    userid = int((prediction.split(','))[0])
     predList = [int(s) for s in (prediction.split(','))[1].split()]
-    trueList = [int(s) for s in (groundTrue.split(','))[1].split()]
-    
+    while True:
+        groundTrue = groundTrues[grdIdx]
+        grdUserid = int((groundTrue.split(','))[0])
+        trueList = [int(s) for s in (groundTrue.split(','))[1].split()]
+        grdIdx = grdIdx+1
+        if userid == grdUserid:
+            break
     predLists.append(predList)
     trueLists.append(trueList)
+
+
 
 
 map3Val = mapk( trueLists, predLists, 3)
