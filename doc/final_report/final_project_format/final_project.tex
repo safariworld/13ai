@@ -1,0 +1,103 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{nips_style,times}
+\usepackage{hyperref}
+\usepackage{url}
+
+\title{Formatting Instructions for Final Project}
+
+
+\author{
+Alice Oh \\
+Department of Computer Science\\
+KAIST\\
+\texttt{hippo@cs.cranberry-lemon.edu} \\
+\And
+Team Member 2 \\
+Affiliation \\
+\texttt{email} \\
+\AND
+Team Member 3 \\
+Affiliation \\
+\texttt{email} \\
+\And
+Team Member 4 \\
+Affiliation \\
+\texttt{email} 
+}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to \LaTeX{} to determine where to break
+% the lines. Using \AND forces a linebreak at that point. So, if \LaTeX{}
+% puts 3 of 4 authors names on the first line, and the last on the second
+% line, try using \AND instead of \And before the third author name.
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+\nipsfinalcopy % Uncomment for camera-ready version
+
+\begin{document}
+
+
+\maketitle
+
+\begin{abstract}
+In the abstract section, write a one- to two-sentence problem statement. Then write your approach in a few sentences. Wrap up by giving a preview of your results.
+\end{abstract}
+
+\section{Introduction}
+First paragraph: describe the problem in general.
+
+Second paragraph: describe specific challenges and difficulties, and describe your approaches to tackle these challenges.
+
+Third paragraph: summarize your results and compare to previous approaches and their results.
+
+Fourth paragraph: write a brief outline of the rest of the paper.
+
+\section{Baseline Approach}
+Here, come up with a basic approach (e.g., classification using SVM and just the bag-of-words of the Weibos). Describe your baseline approach and the experimental results. Throughout this report, you can add more sections to describe the data and anything else in more detail if you feel that is necessary. You can also add a related work section if you feel that is necessary. You can change the titles of the sections and subsections. We are giving you the basic minimum contents for your final project report.
+\subsection{Approach}
+\subsection{Experimental results}
+
+\section{Improved Approach}
+\subsection{Limitations of the baseline approach}
+\subsection{Suggested approach to overcome the limitations}
+\subsection{Experimental results}
+
+\section{Discussions and Future Work}
+
+\section{Group Participation}
+This is an important section. Please be honest about the contributions. This will count for 10\% of your grade.
+\begin{itemize}
+\item
+Alice Oh: preprocessed data, suggested baseline approach, wrote the ``Baseline Approach'' section (overall contribution 20\%)
+\item
+Suin Kim: ran all experiments, wrote ``Abstract'', made presentation slides (overall contribution 40\%)
+\item
+JinYeong Bak: ordered chicken (overall contribution 10\%)
+\item
+Joon Hee Kim: trained in the ROK army (overall contribution: 30\%)
+\end{itemize}
+
+
+\subsubsection*{References}
+
+\small{
+[1] Alexander, J.A. \& Mozer, M.C. (1995) Template-based algorithms
+for connectionist rule extraction. In G. Tesauro, D. S. Touretzky
+and T.K. Leen (eds.), {\it Advances in Neural Information Processing
+Systems 7}, pp. 609-616. Cambridge, MA: MIT Press.
+
+[2] Bower, J.M. \& Beeman, D. (1995) {\it The Book of GENESIS: Exploring
+Realistic Neural Models with the GEneral NEural SImulation System.}
+New York: TELOS/Springer-Verlag.
+
+[3] Hasselmo, M.E., Schnell, E. \& Barkai, E. (1995) Dynamics of learning
+and recall at excitatory recurrent synapses and cholinergic modulation
+in rat hippocampal region CA3. {\it Journal of Neuroscience}
+{\bf 15}(7):5249-5262.
+}
+
+\end{document}
