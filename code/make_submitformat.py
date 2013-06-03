@@ -53,7 +53,7 @@ dickeys.sort()
 for userid in dickeys:
     itemlist = sat1_user[userid]
     itemlist = sorted(itemlist, key=lambda prob: -prob[0])
-    resultf.write("%d\t"%(userid))
+    resultf.write("%d,"%(userid))
     for i in range(1,min(3,len(itemlist))+1):
         resultf.write("%d "%(itemlist[i-1][1]))
     resultf.write("\n")
