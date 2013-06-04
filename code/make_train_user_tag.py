@@ -36,7 +36,7 @@ print("arranging tag index...")
 #select tag idx
 idx = 0
 for i in tagsdic.keys():
-    if tagsdic[i] > 0:
+    if tagsdic[i] > 1:
         tagIdx[i]=idx
         idx += 1
 

@@ -35,7 +35,6 @@ for line in lines:
     mean += len(keywords)
     maxv=max(maxv,len(keywords))
 
-
 print("arranging keyword index...")
 idx = 0
 for i in keywordsSet.keys():
